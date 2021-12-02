@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: Poppins, sanf-serif;
 }
 
 .auth-form {
@@ -15,7 +13,8 @@
 .progress-striped {
   background-image: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.15) 25% transparent 25%,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
     transparent 50%,
     rgba(255, 255, 255, 0.15) 50%,
     rgba(255, 255, 255, 0.15) 75%,
@@ -26,19 +25,19 @@
 }
 
 .project-header {
-  /* background-image: url("assets/images/auth-background.svg"); */
+  background-image: url("/auth-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: rgba(52, 211, 153);
+  background-color: #3b41e3;
   background-size: 250px;
   height: 350px;
 }
 
 .dashboard-header {
-  /* background-image: url("assets/images/auth-background.svg"); */
+  background-image: url("/auth-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: rgba(52, 211, 153);
+  background-color: #3b41e3;
   background-size: 250px;
   height: 100px;
 }
@@ -51,10 +50,10 @@
   left: 0;
   width: 100%;
   height: 640px;
-  /* background-image: url("assets/images/auth-background.svg"); */
+  background-image: url("/auth-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: rgba(52, 211, 153);
+  background-color: #3b41e3;
   transform: skewY(-6deg);
   transform-origin: top left;
 }
@@ -76,7 +75,7 @@
 }
 
 .call-to-action {
-  /* background-image: url("assets/images/auth-background.svg"); */
+  background-image: url("/auth-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 450px;
@@ -84,7 +83,7 @@
 
 .card-project {
   transition: all 0.3s ease 0s, opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 1ms;
-  max-height: 430px;
+  max-height: 445px;
   overflow: hidden;
 }
 .card-project .button-cta {
@@ -121,14 +120,13 @@ footer {
 .testimonial-user.active {
   opacity: 1;
   border: 5px solid #fff;
-  box-shadow: 0 0 0 1px rgb(48, 79, 68);
+  box-shadow: 0 0 0 1px #3b41e3;
 }
 
-/* .list-check li {
-  background: url("../public/assets/images/icon-checklist.svg") no-repeat left
-    8px;
+.list-check li {
+  background: url("/icon-checklist.svg") no-repeat left 8px;
   padding: 6px 0px 3px 28px;
-} */
+}
 
 .item-thumbnail:hover {
   background-color: #ff872e;
@@ -138,15 +136,15 @@ footer {
   position: absolute;
   top: 38%;
   left: 41%;
-  /* content: url("assets/images/icon-thumbnail-hover.svg"); */
+  content: url("/icon-thumbnail-hover.svg");
 }
 .item-thumbnail:hover img {
   opacity: 0.3;
 }
 
 .auth-page {
-  background-color: rgba(52, 211, 153);
-  /* background-image: url("assets/images/auth-background.svg"); */
+  background-color: #3b41e3;
+  background-image: url("/auth-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
 }
